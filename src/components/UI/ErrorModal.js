@@ -1,13 +1,20 @@
 import React from 'react';
+import reactDOM from 'react-dom';
 
 import Card from './Card';
 import Button from './Button';
 import classes from './ErrorModal.module.css';
 
+const Backdrop = (props) => {
+  return (
+      <div className={classes.backdrop} onClick={props.onConfirm} />
+  );
+;}
+
 const ErrorModal = (props) => {
   return (
     <div>
-      <div className={classes.backdrop} onClick={props.onConfirm} />
+      {reactDOM.createPortal(<Backdrop onConfirm={props.onConfirm}/>, document.querySelector('#backdrop'))}
       <Card className={classes.modal}>
         <header className={classes.header}>
           <h2>{props.title}</h2>
