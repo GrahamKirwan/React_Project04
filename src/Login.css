@@ -1,0 +1,31 @@
+.form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 30px 30px;
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.form label {
+    padding-bottom: 10px;
+}
+
+.form input {
+    height: 35px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: 1px solid grey;
+}
+
+.form button {
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
