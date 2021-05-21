@@ -1,4 +1,4 @@
-import React, { useReducer} from 'react'
+import React, { useReducer, useContext} from 'react'
 import './Login.css'
 
 
@@ -24,6 +24,7 @@ const Login = () => {
 
   const handleDecrease = () => {
     dispatch({ type: 'DECREMENT' });
+
   };
   
   return (
